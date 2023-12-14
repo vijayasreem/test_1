@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Trigger>
+    <UserStory>As a user, I want the system to check if the credit amount for a transaction is greater than 50000 per day.</UserStory>
+    <AcceptanceCriteria>
+        <Criteria>
+            <Description>If the credit amount for the transaction is greater than 50000 per day, the system should throw an error message: "Your daily credit limit is exceeded."</Description>
+        </Criteria>
+        <Criteria>
+            <Description>If the credit amount for the transaction is not greater than 50000 per day, the system should proceed to the next check.</Description>
+        </Criteria>
+        <Criteria>
+            <Description>The system should check if the number of transactions for the day exceeds 3.</Description>
+        </Criteria>
+        <Criteria>
+            <Description>If the number of transactions for the day exceeds 3, the system should throw an error message: "Transaction limit exceeded. You cannot perform more than 3 transactions in a day."</Description>
+        </Criteria>
+        <Criteria>
+            <Description>If the number of transactions for the day does not exceed 3, the system should process the transaction.</Description>
+        </Criteria>
+        <Criteria>
+            <Description>After processing the transaction, the system should update the daily credit spent and transaction count.</Description>
+        </Criteria>
+        <Criteria>
+            <Description>The system should confirm the successful completion of the transaction.</Description>
+        </Criteria>
+        <Criteria>
+            <Description>If the credit limit check fails, the system should display an error message.</Description>
+        </Criteria>
+        <Criteria>
+            <Description>If the transaction count check fails, the system should display an error message.</Description>
+        </Criteria>
+    </AcceptanceCriteria>
+</Trigger>

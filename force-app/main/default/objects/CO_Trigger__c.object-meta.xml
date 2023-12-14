@@ -1,0 +1,45 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Transaction__c</fullName>
+    <nameField>
+        <displayFormat>{0}</displayFormat>
+        <label>Transaction Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Custom object for transactions</description>
+    <fields>
+        <fullName>Credit_Amount__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Credit amount for the transaction</description>
+        <externalId>false</externalId>
+        <label>Credit Amount</label>
+        <precision>18</precision>
+        <required>true</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <defaultValue>In Progress</defaultValue>
+        <description>Status of the transaction</description>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </picklistValues>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <unique>false</unique>
+    </fields>
+</CustomObject>
